@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "9JkAwRzoJlai8mk2vABlGZ",
+    "name" : "tf_Email_Repro",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "reK8ZAZf5kck8jK-gt-10736644-2024-10-02T15:25:42.284Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-02-13T08:42:06.013Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

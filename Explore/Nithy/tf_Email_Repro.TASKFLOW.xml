@@ -1,0 +1,64 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>reK8ZAZf5kck8jK-gt-10736644-2024-10-02T15:25:42.284Z::tf.xml</types1:EntryId>
+      <types1:Name>tf_Email_Repro</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>faraz_husain_new</types1:CreatedBy>
+      <types1:CreationDate>2024-10-02T15:25:42Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>faraz_husain_new</types1:PublishedBy>
+      <types1:PublicationDate>2024-10-02T17:02:20Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.tf_Email_Repro/tf_Email_Repro.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="tf_Email_Repro"
+                   name="tf_Email_Repro"
+                   overrideAPIName="false">
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowedUsers>
+                     <user>nsellam_suborg</user>
+                  </allowedUsers>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="klb3mu24" targetId="klb3mu23"/>
+               </start>
+               <service id="klb3mu23">
+                  <title>Notification Task 1</title>
+                  <serviceName>emailNotificationService</serviceName>
+                  <serviceGUID/>
+                  <serviceInput>
+                     <parameter name="Email To" source="constant">nsellamuthu@informatica.com</parameter>
+                     <parameter name="Email Cc" source="constant"/>
+                     <parameter name="Email Subject" source="constant"/>
+                     <parameter name="Email Content Type" source="constant">html</parameter>
+                     <parameter name="Email Body" source="constant">&lt;p&gt;Hi I'm from Nithy&lt;/p&gt;</parameter>
+                  </serviceInput>
+                  <serviceOutput/>
+                  <link id="klb3mu25" targetId="c"/>
+               </service>
+               <end id="c"/>
+            </flow>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>9JkAwRzoJlai8mk2vABlGZ</types1:GUID>
+      <types1:DisplayName>tf_Email_Repro</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-02-13T08:42:05.943Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
