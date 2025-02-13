@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "3xfLyPFGRQ4kCP12uyBcEU",
+    "name" : "TF_EMAIL",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "yuRZXDyvs7xvk0q-gt-10770184-2024-10-02T15:53:43.391Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-02-13T08:37:42.410Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

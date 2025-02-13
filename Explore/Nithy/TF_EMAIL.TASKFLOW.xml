@@ -1,0 +1,71 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>yuRZXDyvs7xvk0q-gt-10770184-2024-10-02T15:53:43.391Z::tf.xml</types1:EntryId>
+      <types1:Name>TF_EMAIL</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>faraz_husain_new</types1:CreatedBy>
+      <types1:CreationDate>2024-10-02T15:53:43Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>faraz_husain_new</types1:PublishedBy>
+      <types1:PublicationDate>2024-10-02T17:02:09Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.TF_EMAIL/TF_EMAIL.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="TF_EMAIL"
+                   name="TF_EMAIL"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowedGroups>
+                     <group>Administrator</group>
+                  </allowedGroups>
+                  <allowedUsers>
+                     <user>nsellam_suborg</user>
+                  </allowedUsers>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="knsy2efh" targetId="knsy2efg"/>
+               </start>
+               <service id="knsy2efg">
+                  <title>Notification Task 1</title>
+                  <serviceName>emailNotificationService</serviceName>
+                  <serviceGUID/>
+                  <serviceInput>
+                     <parameter name="Email To" source="constant">nsellamuthu@informatica.com</parameter>
+                     <parameter name="Email Cc" source="constant"/>
+                     <parameter name="Email Subject" source="constant">Parent Taskflow is started</parameter>
+                     <parameter name="Email Content Type" source="constant">html</parameter>
+                     <parameter name="Email Body" source="formula">
+                        <expression language="XQuery">util:getOrganizationId()</expression>
+                     </parameter>
+                  </serviceInput>
+                  <serviceOutput/>
+                  <link id="l7ua4cse" targetId="c"/>
+               </service>
+               <end id="c"/>
+            </flow>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>3xfLyPFGRQ4kCP12uyBcEU</types1:GUID>
+      <types1:DisplayName>TF_EMAIL</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-02-13T08:37:42.285Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
